@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B97E5023160F669D00E571C6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97E5022160F669D00E571C6 /* Cocoa.framework */; };
+		B97E502D160F669D00E571C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B97E502B160F669D00E571C6 /* InfoPlist.strings */; };
+		B97E502F160F669D00E571C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B97E502E160F669D00E571C6 /* main.m */; };
+		B97E5033160F669D00E571C6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B97E5031160F669D00E571C6 /* Credits.rtf */; };
+		B97E5036160F669D00E571C6 /* USAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B97E5035160F669D00E571C6 /* USAppDelegate.m */; };
+		B97E5039160F669D00E571C6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97E5037160F669D00E571C6 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B97E501E160F669D00E571C6 /* Shashti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shashti.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B97E5022160F669D00E571C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B97E5025160F669D00E571C6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B97E5026160F669D00E571C6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B97E5027160F669D00E571C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B97E502A160F669D00E571C6 /* Shashti-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shashti-Info.plist"; sourceTree = "<group>"; };
+		B97E502C160F669D00E571C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B97E502E160F669D00E571C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B97E5030160F669D00E571C6 /* Shashti-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shashti-Prefix.pch"; sourceTree = "<group>"; };
+		B97E5032160F669D00E571C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B97E5034160F669D00E571C6 /* USAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USAppDelegate.h; sourceTree = "<group>"; };
+		B97E5035160F669D00E571C6 /* USAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USAppDelegate.m; sourceTree = "<group>"; };
+		B97E5038160F669D00E571C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B97E501B160F669D00E571C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B97E5023160F669D00E571C6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B97E5013160F669D00E571C6 = {
+			isa = PBXGroup;
+			children = (
+				B97E5028160F669D00E571C6 /* Shashti */,
+				B97E5021160F669D00E571C6 /* Frameworks */,
+				B97E501F160F669D00E571C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B97E501F160F669D00E571C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B97E501E160F669D00E571C6 /* Shashti.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B97E5021160F669D00E571C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B97E5022160F669D00E571C6 /* Cocoa.framework */,
+				B97E5024160F669D00E571C6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B97E5024160F669D00E571C6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B97E5025160F669D00E571C6 /* AppKit.framework */,
+				B97E5026160F669D00E571C6 /* CoreData.framework */,
+				B97E5027160F669D00E571C6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B97E5028160F669D00E571C6 /* Shashti */ = {
+			isa = PBXGroup;
+			children = (
+				B97E5034160F669D00E571C6 /* USAppDelegate.h */,
+				B97E5035160F669D00E571C6 /* USAppDelegate.m */,
+				B97E5037160F669D00E571C6 /* MainMenu.xib */,
+				B97E5029160F669D00E571C6 /* Supporting Files */,
+			);
+			path = Shashti;
+			sourceTree = "<group>";
+		};
+		B97E5029160F669D00E571C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B97E502A160F669D00E571C6 /* Shashti-Info.plist */,
+				B97E502B160F669D00E571C6 /* InfoPlist.strings */,
+				B97E502E160F669D00E571C6 /* main.m */,
+				B97E5030160F669D00E571C6 /* Shashti-Prefix.pch */,
+				B97E5031160F669D00E571C6 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B97E501D160F669D00E571C6 /* Shashti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B97E503C160F669D00E571C6 /* Build configuration list for PBXNativeTarget "Shashti" */;
+			buildPhases = (
+				B97E501A160F669D00E571C6 /* Sources */,
+				B97E501B160F669D00E571C6 /* Frameworks */,
+				B97E501C160F669D00E571C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shashti;
+			productName = Shashti;
+			productReference = B97E501E160F669D00E571C6 /* Shashti.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B97E5015160F669D00E571C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = US;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "James Williams";
+			};
+			buildConfigurationList = B97E5018160F669D00E571C6 /* Build configuration list for PBXProject "Shashti" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B97E5013160F669D00E571C6;
+			productRefGroup = B97E501F160F669D00E571C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B97E501D160F669D00E571C6 /* Shashti */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B97E501C160F669D00E571C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B97E502D160F669D00E571C6 /* InfoPlist.strings in Resources */,
+				B97E5033160F669D00E571C6 /* Credits.rtf in Resources */,
+				B97E5039160F669D00E571C6 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B97E501A160F669D00E571C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B97E502F160F669D00E571C6 /* main.m in Sources */,
+				B97E5036160F669D00E571C6 /* USAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B97E502B160F669D00E571C6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B97E502C160F669D00E571C6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B97E5031160F669D00E571C6 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B97E5032160F669D00E571C6 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B97E5037160F669D00E571C6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B97E5038160F669D00E571C6 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B97E503A160F669D00E571C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B97E503B160F669D00E571C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B97E503D160F669D00E571C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shashti/Shashti-Prefix.pch";
+				INFOPLIST_FILE = "Shashti/Shashti-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B97E503E160F669D00E571C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shashti/Shashti-Prefix.pch";
+				INFOPLIST_FILE = "Shashti/Shashti-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B97E5018160F669D00E571C6 /* Build configuration list for PBXProject "Shashti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97E503A160F669D00E571C6 /* Debug */,
+				B97E503B160F669D00E571C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B97E503C160F669D00E571C6 /* Build configuration list for PBXNativeTarget "Shashti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97E503D160F669D00E571C6 /* Debug */,
+				B97E503E160F669D00E571C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B97E5015160F669D00E571C6 /* Project object */;
+}
