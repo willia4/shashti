@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                background-color: #EEEEEE;
+
+            }
+            
+            p {
+                font-family: "Lucidia Grande";
+                font-size: 12pt;
+            }
+        </style>
+    </head>
+    <body>
+    <p>
+        Ordinary computers are unable to generate actual random numbers and
+    must therefore make do with what are called "<a href="http://en.wikipedia.org/wiki/Pseudorandomness">pseudo-random numbers</a>".
+    </p>
+        
+    <p>
+        This application uses the
+        <a href="https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man3/arc4random.3.html">pseudo-random number generator provided by the system</a>
+        for <a href="http://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator">cryptographic services</a>.
+        
+        This generator is <a href="http://en.wikipedia.org/wiki//dev/random">seeded with actual external entropy</a> and is more than suitable for password-generating purposes.
+    </p>
+
+    <p>
+        However, if you are concerned, this application can use random numbers from <a href="http://www.random.org/">RANDOM.ORG</a>.
+    </p>
+
+    <p>
+        RANDOM.ORG is the primary source of <a href="http://www.random.org/faq/#Q2.1">true randomness</a> on the Internet and is thus under heavy load.
+        They have therefore <a href="http://www.random.org/quota/">implemented a quota system</a>.
+        This application attempts to be a good citizen and should not stress your
+        RANDOM.ORG quotas.
+    </p>
+
+    <p>
+        If, however, RANDOM.ORG stops responding, you should consider reverting to the built-in pseudo-random generator.
+    </p>
+        
+    </body>
+</html>

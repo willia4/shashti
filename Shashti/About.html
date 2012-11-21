@@ -1,0 +1,57 @@
+<html>
+<head>
+<style type="text/css">
+    .body {
+        font-family: "Lucidia Grande";
+    }
+    
+    .title {
+        font-size: 15pt;
+        text-align: right;
+    }
+    
+    .subtitle {
+        font-size: 13pt;
+        font-style: italic;
+        text-align: right;
+    }
+    
+    .author {
+        font-size: 10pt;
+        font-weight: bold;
+
+        text-align: right;
+        margin-bottom: 14px;
+        padding-bottom: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: black;
+        border-bottom-width: 2px;
+    }
+    
+    .bodytext {
+        font-size: 12pt;
+        margin-bottom: 8px;
+    }
+</style>
+</head>
+<body>
+    <div class="title">Shashti</div>
+    <div class="subtitle">The Humane Password Generator</div>
+    <div class="author">By <a href="http://jameswilliams.me">James Williams</a></div>
+    
+    <div class="bodytext">Shashti replicates the <a href="http://world.std.com/~reinhold/diceware.html">Diceware password generation system</a> by Arnold G. Reinhold in a somewhat more efficient manner than rolling dice over and over.</div>
+    
+    <div class="bodytext">If you read the Diceware page, you'll see that the author explicitly recommends against using a computer to generate passwords. This application mitigates his concerns somewhat by using a <a href="https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man3/arc4random.3.html">system-provided pseudo-random number generator</a> intended for <a href="http://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator">cryptographic services</a>.</div>
+    <div class="bodytext">It avoids skewing towards powers-of-two by "rolling dice" in the same manner as you would do if you actually had dice: it repeatedly requests a number from a uniform pseudo-random distribution of digits between 1 and 6 (inclusive) and chooses words from the Diceware list in exactly the same way as proscribed to be done manually.</div>
+
+    <div class="bodytext">This application also offers an alternative to the already extremely-secure pseudo-random number generator: it is able to fetch truly random numbers from <a href="http://random.org">RANDOM.ORG</a>. RANDOM.ORG uses physical sources of noises to seed its number pool and is scientifically guranteed to be random to the extent that we understand physics.</div>
+    
+    <div class="bodytext">However, based on the strength of the pseudo-random number generator, the I believe that this is unnecessary.</div>
+    
+    <div class="bodytext">A far greater security risk is that this application may "phone home" and send your passwords to me. This is mitigated because the source code for this application should be freely available and you can see that it does no such thing.</div>
+    
+    <div class="bodytext">For your own peace of mind, I also recommend that you generate multiple passwords at a time and then pick one from the list. In the worst case, a malicious attacker with access to your generated passwords will still need to try all of them.</div>
+    
+    
+</body>
+</html>

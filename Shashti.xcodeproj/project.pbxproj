@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B905E8EF165C2A420092E010 /* USWordList.m in Sources */ = {isa = PBXBuildFile; fileRef = B905E8EE165C2A420092E010 /* USWordList.m */; };
+		B905E8F3165C3FD30092E010 /* USPasswordTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B905E8F2165C3FD30092E010 /* USPasswordTableView.m */; };
 		B97E5023160F669D00E571C6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97E5022160F669D00E571C6 /* Cocoa.framework */; };
 		B97E502D160F669D00E571C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B97E502B160F669D00E571C6 /* InfoPlist.strings */; };
 		B97E502F160F669D00E571C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B97E502E160F669D00E571C6 /* main.m */; };
 		B97E5033160F669D00E571C6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B97E5031160F669D00E571C6 /* Credits.rtf */; };
 		B97E5036160F669D00E571C6 /* USAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B97E5035160F669D00E571C6 /* USAppDelegate.m */; };
 		B97E5039160F669D00E571C6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97E5037160F669D00E571C6 /* MainMenu.xib */; };
+		B97E5041160F66E000E571C6 /* diceware.wordlist.asc in Resources */ = {isa = PBXBuildFile; fileRef = B97E5040160F66E000E571C6 /* diceware.wordlist.asc */; };
+		B97E5044160F682100E571C6 /* USRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = B97E5043160F682100E571C6 /* USRandom.m */; };
+		B992F3E6165C5A7F00B8395F /* RandomOrgHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = B992F3E5165C5A7F00B8395F /* RandomOrgHelp.html */; };
+		B992F3E9165C5B3000B8395F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B992F3E8165C5B3000B8395F /* WebKit.framework */; };
+		B992F3EB165C625100B8395F /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = B992F3EA165C625100B8395F /* About.html */; };
+		B9CDFC14165BEDC3000DA695 /* USPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CDFC13165BEDC3000DA695 /* USPassword.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B905E8ED165C2A420092E010 /* USWordList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USWordList.h; sourceTree = "<group>"; };
+		B905E8EE165C2A420092E010 /* USWordList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USWordList.m; sourceTree = "<group>"; };
+		B905E8F1165C3FD30092E010 /* USPasswordTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USPasswordTableView.h; sourceTree = "<group>"; };
+		B905E8F2165C3FD30092E010 /* USPasswordTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USPasswordTableView.m; sourceTree = "<group>"; };
 		B97E501E160F669D00E571C6 /* Shashti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shashti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97E5022160F669D00E571C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B97E5025160F669D00E571C6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -29,6 +41,15 @@
 		B97E5034160F669D00E571C6 /* USAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USAppDelegate.h; sourceTree = "<group>"; };
 		B97E5035160F669D00E571C6 /* USAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USAppDelegate.m; sourceTree = "<group>"; };
 		B97E5038160F669D00E571C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B97E5040160F66E000E571C6 /* diceware.wordlist.asc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = diceware.wordlist.asc; path = Resources/diceware.wordlist.asc; sourceTree = "<group>"; };
+		B97E5042160F682100E571C6 /* USRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USRandom.h; sourceTree = "<group>"; };
+		B97E5043160F682100E571C6 /* USRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USRandom.m; sourceTree = "<group>"; };
+		B992F3E5165C5A7F00B8395F /* RandomOrgHelp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RandomOrgHelp.html; sourceTree = "<group>"; };
+		B992F3E8165C5B3000B8395F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B992F3EA165C625100B8395F /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = About.html; sourceTree = "<group>"; };
+		B9CDFC07165BDA6B000DA695 /* CWLSynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWLSynthesizeSingleton.h; path = ../../3rdParty/CWLSynthesizeSingleton.h; sourceTree = "<group>"; };
+		B9CDFC12165BEDC3000DA695 /* USPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USPassword.h; sourceTree = "<group>"; };
+		B9CDFC13165BEDC3000DA695 /* USPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USPassword.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B992F3E9165C5B3000B8395F /* WebKit.framework in Frameworks */,
 				B97E5023160F669D00E571C6 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +68,7 @@
 		B97E5013160F669D00E571C6 = {
 			isa = PBXGroup;
 			children = (
+				B992F3E8165C5B3000B8395F /* WebKit.framework */,
 				B97E5028160F669D00E571C6 /* Shashti */,
 				B97E5021160F669D00E571C6 /* Frameworks */,
 				B97E501F160F669D00E571C6 /* Products */,
@@ -82,10 +105,22 @@
 		B97E5028160F669D00E571C6 /* Shashti */ = {
 			isa = PBXGroup;
 			children = (
+				B9CDFC05165BDA57000DA695 /* 3rd Party */,
+				B97E503F160F66D700E571C6 /* Resources */,
 				B97E5034160F669D00E571C6 /* USAppDelegate.h */,
 				B97E5035160F669D00E571C6 /* USAppDelegate.m */,
 				B97E5037160F669D00E571C6 /* MainMenu.xib */,
 				B97E5029160F669D00E571C6 /* Supporting Files */,
+				B97E5042160F682100E571C6 /* USRandom.h */,
+				B97E5043160F682100E571C6 /* USRandom.m */,
+				B9CDFC12165BEDC3000DA695 /* USPassword.h */,
+				B9CDFC13165BEDC3000DA695 /* USPassword.m */,
+				B905E8ED165C2A420092E010 /* USWordList.h */,
+				B905E8EE165C2A420092E010 /* USWordList.m */,
+				B905E8F1165C3FD30092E010 /* USPasswordTableView.h */,
+				B905E8F2165C3FD30092E010 /* USPasswordTableView.m */,
+				B992F3E5165C5A7F00B8395F /* RandomOrgHelp.html */,
+				B992F3EA165C625100B8395F /* About.html */,
 			);
 			path = Shashti;
 			sourceTree = "<group>";
@@ -100,6 +135,22 @@
 				B97E5031160F669D00E571C6 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B97E503F160F66D700E571C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B97E5040160F66E000E571C6 /* diceware.wordlist.asc */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B9CDFC05165BDA57000DA695 /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				B9CDFC07165BDA6B000DA695 /* CWLSynthesizeSingleton.h */,
+			);
+			name = "3rd Party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +208,9 @@
 				B97E502D160F669D00E571C6 /* InfoPlist.strings in Resources */,
 				B97E5033160F669D00E571C6 /* Credits.rtf in Resources */,
 				B97E5039160F669D00E571C6 /* MainMenu.xib in Resources */,
+				B97E5041160F66E000E571C6 /* diceware.wordlist.asc in Resources */,
+				B992F3E6165C5A7F00B8395F /* RandomOrgHelp.html in Resources */,
+				B992F3EB165C625100B8395F /* About.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +223,10 @@
 			files = (
 				B97E502F160F669D00E571C6 /* main.m in Sources */,
 				B97E5036160F669D00E571C6 /* USAppDelegate.m in Sources */,
+				B97E5044160F682100E571C6 /* USRandom.m in Sources */,
+				B9CDFC14165BEDC3000DA695 /* USPassword.m in Sources */,
+				B905E8EF165C2A420092E010 /* USWordList.m in Sources */,
+				B905E8F3165C3FD30092E010 /* USPasswordTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +356,7 @@
 				B97E503E160F669D00E571C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
