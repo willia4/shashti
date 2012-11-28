@@ -8,12 +8,23 @@
 
 #import "USAppDelegate.h"
 
+#define US_MINIMUM_VALUE 0
+#define US_MAXIMUM_VALUE 10000
+
 @implementation USAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     passwordQueue = dispatch_queue_create("com.ungroundedsoftware.shashti.passwordQueue", DISPATCH_QUEUE_SERIAL);
     passwords = [[NSMutableArray alloc] init];
+    
+    [(NSNumberFormatter*)self.numberOfPasswords.formatter setMinimum:[NSNumber numberWithInteger:US_MINIMUM_VALUE]];
+    [(NSNumberFormatter*)self.numberOfPasswords.formatter setMaximum:[NSNumber numberWithInteger:US_MAXIMUM_VALUE]];
+    [(NSNumberFormatter*)self.numberOfPasswords.formatter setMaximumFractionDigits:0];
+    
+    [(NSNumberFormatter*)self.numberOfWordsPerPassword.formatter setMinimum:[NSNumber numberWithInteger:US_MINIMUM_VALUE]];
+    [(NSNumberFormatter*)self.numberOfWordsPerPassword.formatter setMaximum:[NSNumber numberWithInteger:US_MAXIMUM_VALUE]];
+    [(NSNumberFormatter*)self.numberOfWordsPerPassword.formatter setMaximumFractionDigits:0];
     
     running = NO;
 }
@@ -72,6 +83,16 @@
     BOOL additionalEntropy = [self.useAdditionalEntropy state] == NSOnState;
     BOOL useTrueRandomness = [self.useTrueRandomness state] == NSOnState;
     BOOL addSpacesBetweenWords = [self.useSpacesBetweenWords state] == NSOnState;
+    
+    NSNumber *n = [(NSNumberFormatter*)self.numberOfPasswords.formatter numberFromString:self.numberOfPasswords.stringValue];
+    numberOfPasswords = n ? n.unsignedIntegerValue : 0;
+    
+    n = [(NSNumberFormatter*)self.numberOfWordsPerPassword.formatter numberFromString:self.numberOfWordsPerPassword.stringValue];
+    wordsPerPassword = n ? n.unsignedIntegerValue : 0;
+    
+    
+    if(!numberOfPasswords || !wordsPerPassword)
+        return;
     
     [self beginWait];
     [self reportProgress:0 forGoal:numberOfPasswords];

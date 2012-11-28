@@ -29,6 +29,7 @@
 @property (assign) IBOutlet NSProgressIndicator *progressIndicator;
 @property (assign) IBOutlet NSTextField *numberOfPasswords;
 @property (assign) IBOutlet NSTextField *numberOfWordsPerPassword;
+
 @property (assign) IBOutlet NSButton *useAdditionalEntropy;
 
 @property (assign) IBOutlet NSButton *useTrueRandomness;

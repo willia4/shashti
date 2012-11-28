@@ -269,6 +269,7 @@
 										<object class="NSLocale" key="locale" id="147857946">
 											<string key="NS.identifier"/>
 										</object>
+										<real value="0.0" key="minimum"/>
 										<string key="negativeInfinitySymbol">-∞</string>
 										<string key="nilSymbol"/>
 										<integer value="1" key="numberStyle"/>
@@ -286,7 +287,8 @@
 										<string key="NSString">NaN</string>
 										<dictionary key="NSAttributes" id="839605891"/>
 									</object>
-									<object class="NSDecimalNumberPlaceholder" key="NS.min" id="861299664">
+									<real value="0.0" key="NS.min"/>
+									<object class="NSDecimalNumberPlaceholder" key="NS.max" id="93962268">
 										<int key="NS.exponent">0</int>
 										<int key="NS.length">0</int>
 										<bool key="NS.negative">YES</bool>
@@ -294,7 +296,6 @@
 										<int key="NS.mantissa.bo">1</int>
 										<bytes key="NS.mantissa">AAAAAAAAAAAAAAAAAAAAAA</bytes>
 									</object>
-									<reference key="NS.max" ref="861299664"/>
 									<object class="NSDecimalNumberHandler" key="NS.rounding">
 										<int key="NS.roundingmode">3</int>
 										<bool key="NS.raise.overflow">YES</bool>
@@ -384,6 +385,7 @@
 										<boolean value="YES" key="allowsFloats"/>
 										<integer value="1040" key="formatterBehavior"/>
 										<reference key="locale" ref="147857946"/>
+										<real value="0.0" key="minimum"/>
 										<string key="negativeInfinitySymbol">-∞</string>
 										<string key="nilSymbol"/>
 										<integer value="1" key="numberStyle"/>
@@ -401,8 +403,8 @@
 										<string key="NSString">NaN</string>
 										<reference key="NSAttributes" ref="839605891"/>
 									</object>
-									<reference key="NS.min" ref="861299664"/>
-									<reference key="NS.max" ref="861299664"/>
+									<real value="0.0" key="NS.min"/>
+									<reference key="NS.max" ref="93962268"/>
 									<object class="NSDecimalNumberHandler" key="NS.rounding">
 										<int key="NS.roundingmode">3</int>
 										<bool key="NS.raise.overflow">YES</bool>
@@ -1748,7 +1750,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">670</int>
+			<int key="maxID">672</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
