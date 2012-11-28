@@ -20,6 +20,7 @@
 @property (readonly) NSString *stringValue;
 
 @property (readonly) BOOL additionalEntroy;
+@property (assign) BOOL addSpacesBetweenWords;
 
 -(id)initWithNumberOfWords:(NSUInteger)numberOfWords andAdditionalEntropy:(BOOL)a withTrueRandomness:(BOOL)trueRandomness error:(NSError**)error;
 @end

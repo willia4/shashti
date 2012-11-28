@@ -33,6 +33,8 @@
 
 @property (assign) IBOutlet NSButton *useTrueRandomness;
 
+@property (assign) IBOutlet NSButton *useSpacesBetweenWords;
+
 @property (assign) IBOutlet NSTableView *passwordView;
 @property (assign) IBOutlet NSArrayController *passwordsController;
 
@@ -41,6 +43,8 @@
 
 @property (assign) IBOutlet NSWindow *aboutWindow;
 @property (assign) IBOutlet WebView *aboutWindowWebView;
+
+-(IBAction)addSpacesBetweenWordsCheckChanged:(id)sender;
 
 -(IBAction)generatePasswords:(id)sender;
 -(IBAction)useTrueRandomnessCheckChanged:(id)sender;

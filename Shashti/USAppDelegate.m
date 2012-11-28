@@ -26,6 +26,7 @@
     [self.useAdditionalEntropy setEnabled:NO];
     [self.useTrueRandomness setEnabled:NO];
     [self.passwordView setEnabled:NO];
+    [self.useSpacesBetweenWords setEnabled:NO];
     
     running = YES;
     [self.generateButton setTitle:@"Cancel"];
@@ -39,6 +40,7 @@
     [self.useAdditionalEntropy setEnabled:YES];
     [self.useTrueRandomness setEnabled:YES];
     [self.passwordView setEnabled:YES];
+    [self.useSpacesBetweenWords setEnabled:YES];
     
     running = NO;
     [self.generateButton setTitle:@"Generate"];
@@ -69,6 +71,7 @@
     NSUInteger wordsPerPassword = self.numberOfWordsPerPassword.integerValue;
     BOOL additionalEntropy = [self.useAdditionalEntropy state] == NSOnState;
     BOOL useTrueRandomness = [self.useTrueRandomness state] == NSOnState;
+    BOOL addSpacesBetweenWords = [self.useSpacesBetweenWords state] == NSOnState;
     
     [self beginWait];
     [self reportProgress:0 forGoal:numberOfPasswords];
@@ -92,7 +95,7 @@
                                                  andAdditionalEntropy:additionalEntropy
                                                    withTrueRandomness:useTrueRandomness
                                                                 error:&error];
-            
+
             if(error)
             {
                 dispatch_sync(main, ^{
@@ -109,6 +112,8 @@
             }
             else
             {
+                p.addSpacesBetweenWords = addSpacesBetweenWords;
+                
                 dispatch_sync(main, ^{
                     [self.passwordsController addObject:p];
                     [self reportProgress:i forGoal:numberOfPasswords];
@@ -123,6 +128,16 @@
             [self endWait];
         });
     });
+}
+
+-(IBAction)addSpacesBetweenWordsCheckChanged:(id)sender
+{
+    BOOL addSpacesBetweenWords = [self.useSpacesBetweenWords state] == NSOnState;
+ 
+    for(USPassword *p in passwords)
+    {
+        p.addSpacesBetweenWords = addSpacesBetweenWords;
+    }
 }
 
 -(IBAction)generatePasswords:(id)sender

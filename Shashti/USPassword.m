@@ -14,6 +14,18 @@
 
 @implementation USPassword
 
++(NSSet *)keyPathsForValuesAffectingValueForKey:(NSString *)key
+{
+    NSSet *r = [super keyPathsForValuesAffectingValueForKey:key];
+    
+    if([key isEqualToString:@"stringValue"])
+    {
+        r = [r setByAddingObject:@"addSpacesBetweenWords"];
+    }
+    
+    return r;
+}
+
 -(id)initWithNumberOfWords:(NSUInteger)numberOfWords andAdditionalEntropy:(BOOL)a withTrueRandomness:(BOOL)trueRandomness error:(NSError**)error;
 {
     if((self = [super init]))
@@ -82,6 +94,9 @@
 
 -(NSString*)stringValue
 {
-    return [words componentsJoinedByString:@" "];
+    if(self.addSpacesBetweenWords)
+        return [words componentsJoinedByString:@" "];
+    else
+        return [words componentsJoinedByString:@""];
 }
 @end
