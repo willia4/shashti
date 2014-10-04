@@ -47,7 +47,7 @@
 		B992F3E5165C5A7F00B8395F /* RandomOrgHelp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RandomOrgHelp.html; sourceTree = "<group>"; };
 		B992F3E8165C5B3000B8395F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B992F3EA165C625100B8395F /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = About.html; sourceTree = "<group>"; };
-		B9CDFC07165BDA6B000DA695 /* CWLSynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWLSynthesizeSingleton.h; path = ../../3rdParty/CWLSynthesizeSingleton.h; sourceTree = "<group>"; };
+		B9CDFC07165BDA6B000DA695 /* CWLSynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWLSynthesizeSingleton.h; path = 3rdParty/CWLSynthesizeSingleton.h; sourceTree = "<group>"; };
 		B9CDFC12165BEDC3000DA695 /* USPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USPassword.h; sourceTree = "<group>"; };
 		B9CDFC13165BEDC3000DA695 /* USPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USPassword.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
